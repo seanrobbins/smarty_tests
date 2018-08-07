@@ -1,5 +1,5 @@
 Given("I am on the Smarty homepage") do
- @browser.goto "https://smarty.co.uk/" 
+  @browser.goto "https://smarty.co.uk/" 
 end
 
 When("I select the small plan") do
