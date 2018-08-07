@@ -1,16 +1,16 @@
 Given("I am on the Smarty homepage") do
-  pending # Write code here that turns the phrase above into concrete actions
+ @browser.goto "https://smarty.co.uk/" 
 end
 
 When("I select the small plan") do
-  pending # Write code here that turns the phrase above into concrete actions
+  @browser.link(:id => 'small-plan').click
 end
 
 When("confirm I want the small plan") do
-  pending # Write code here that turns the phrase above into concrete actions
+  @browser.link(:css => '#skip-to-content-visual > div.Plan-banner > div > a').click
 end
 
 Then("I am directed to order page for signing up to the small plan") do
-  pending # Write code here that turns the phrase above into concrete actions
+  expect(@browser.url).to match(/\/order\/SM_SMALL\/small/) 
 end
 
